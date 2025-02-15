@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #2c3e50;     /* 主色调 */
+    --secondary-color: #3498db;   /* 辅色调 */
+    --light-bg: #f8f9fa;          /* 背景色 */
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--light-bg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部样式 */
+.header {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 1rem;
+}
+
+/* 卡片式布局 */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* 技能标签 */
+.skill-tag {
+    display: inline-block;
+    background: var(--light-bg);
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* 项目卡片 */
+.project-card {
+    border-left: 4px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateX(10px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 0;
+    }
+    
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
